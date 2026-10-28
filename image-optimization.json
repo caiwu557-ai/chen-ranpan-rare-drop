@@ -1,0 +1,117 @@
+{
+  "images": [
+    {
+      "file": "assets/crates/classified.png",
+      "pngBytes": 781348,
+      "webpBytes": 130448,
+      "size": [
+        768,
+        768
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/crates/common.png",
+      "pngBytes": 718000,
+      "webpBytes": 110830,
+      "size": [
+        768,
+        768
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/crates/covert.png",
+      "pngBytes": 820976,
+      "webpBytes": 156472,
+      "size": [
+        768,
+        768
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/crates/milspec.png",
+      "pngBytes": 763947,
+      "webpBytes": 127726,
+      "size": [
+        768,
+        768
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/crates/restricted.png",
+      "pngBytes": 750376,
+      "webpBytes": 118284,
+      "size": [
+        768,
+        768
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/pick/back.png",
+      "pngBytes": 1383407,
+      "webpBytes": 260828,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/pick/background.png",
+      "pngBytes": 1326318,
+      "webpBytes": 240686,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/pick/lineart.png",
+      "pngBytes": 79141,
+      "webpBytes": 40032,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": true
+    },
+    {
+      "file": "assets/pick/shape-mask.png",
+      "pngBytes": 9264,
+      "webpBytes": 5110,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": true
+    },
+    {
+      "file": "assets/pick/subject.png",
+      "pngBytes": 479823,
+      "webpBytes": 116162,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": false
+    },
+    {
+      "file": "assets/pick/text.png",
+      "pngBytes": 36003,
+      "webpBytes": 15646,
+      "size": [
+        1024,
+        1024
+      ],
+      "lossless": true
+    }
+  ],
+  "pngBytes": 7148603,
+  "webpBytes": 1322224,
+  "alphaUnchanged": true
+}
