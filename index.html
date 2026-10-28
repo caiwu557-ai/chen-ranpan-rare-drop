@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="theme-color" content="#070a0f"/>
+  <meta name="description" content="A one-of-one birthday drop for CHEN RANPAN. Open the case, inspect the impossible."/>
+  <title>RARE DROP — CHEN RANPAN</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preload" href="assets/crates/covert.png" as="image"/>
+  <link rel="preload" href="assets/pick/preview.png" as="image"/>
+</head>
+<body data-state="ready">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <div class="scan-grid" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-symbol">▣</span><span>DROP<span class="brand-alt">/</span>01</span></div>
+    <div class="top-center">EXCLUSIVE CONTAINER <span class="top-dot"></span> PRIVATE RELEASE</div>
+    <div class="top-end"><span class="live-indicator"></span> SYSTEM ONLINE <span class="top-index">/ 2026</span></div>
+  </header>
+  <main>
+    <section class="screen intro" aria-label="开启生日礼物">
+      <div class="intro-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> PERSONALIZED DROP // CRP-001</div>
+        <h1>THE FINAL<br/><em>DROP<span class="punct">.</span></em></h1>
+        <p class="intro-description">A SPECIAL CASE HAS BEEN RESERVED.<br/>ONE ITEM. ONE OWNER. NO SECOND CHANCE.</p>
+      </div>
+      <div class="intro-display">
+        <div class="target-circles"></div><div class="radar-ring"></div>
+        <div class="crosshair cross-tl"></div><div class="crosshair cross-tr"></div><div class="crosshair cross-bl"></div><div class="crosshair cross-br"></div>
+        <div class="case-aura"></div>
+        <img class="hero-case" src="assets/crates/covert.png" alt="红金色稀有补给箱"/>
+        <div class="case-floor"></div>
+        <div class="case-id"><span>TYPE // 05</span><strong>UNKNOWN CONTENT</strong></div>
+      </div>
+      <div class="intro-bottom">
+        <div class="gift-recipient"><span class="tiny-label">ALLOCATED TO</span><strong>陈冉攀 <small>/ CHEN RANPAN</small></strong></div>
+        <button class="primary-button" id="openButton" type="button"><span class="button-main">UNLOCK CONTAINER</span><span class="button-arrow">↗</span></button>
+        <div class="intro-counter"><b>01</b><span>/ 01<br/>UNCLAIMED</span></div>
+      </div>
+    </section>
+    <section class="screen roulette" aria-label="稀有掉落抽取" aria-live="off">
+      <div class="roulette-intro"><div class="eyebrow"><span class="eyebrow-line"></span> REWARD GENERATION PROTOCOL</div><h2>DECODING <span>RARITY</span></h2><div class="roulette-subtitle"><span id="scrollStatus">INITIALIZING REEL...</span><span id="speedIndicator">0 / MAX</span></div></div>
+      <div class="reel-viewport" id="reelViewport">
+        <div class="reel-haze reel-haze-left"></div><div class="reel-haze reel-haze-right"></div>
+        <div class="reel-flares" id="reelFlares"></div>
+        <div class="reel-track" id="reelTrack"></div>
+        <div class="reel-centerline"><span class="center-top"></span><span class="center-bottom"></span></div>
+      </div>
+      <div class="reel-bottom"><span><span class="pulse-square"></span> ACQUIRING DROP SIGNATURE</span><span>DO NOT INTERRUPT SEQUENCE</span></div>
+      <div class="rarity-guide"><span class="rg-item" style="--rc:#c3ccd1"><i></i>COMMON</span><span class="rg-item" style="--rc:#219fff"><i></i>MIL-SPEC</span><span class="rg-item" style="--rc:#a25bff"><i></i>RESTRICTED</span><span class="rg-item" style="--rc:#ff49c8"><i></i>CLASSIFIED</span><span class="rg-item" style="--rc:#ffb260"><i></i>SPECIAL</span></div>
+    </section>
+    <section class="screen inspect" aria-label="检视生日稀有拨片">
+      <div class="inspect-title"><div class="eyebrow"><span class="eyebrow-line"></span> 01 / 01 — PRIVATE COLLECTION</div><h2>RARE <em>FOUND.</em></h2></div>
+      <div class="inspect-layout">
+        <div class="inspect-viewer" id="inspectViewer">
+          <div class="viewer-halo"></div><div class="viewer-orbit viewer-orbit-a"></div><div class="viewer-orbit viewer-orbit-b"></div>
+          <div class="viewer-cross viewer-cross-tl"></div><div class="viewer-cross viewer-cross-br"></div>
+          <canvas id="pickCanvas" aria-label="可以拖动旋转的三维全息吉他拨片" role="img"></canvas>
+          <div id="pickFallback" class="pick-fallback" hidden><div class="fallback-stack"><img src="assets/pick/background.png" alt="拨片底层"/><img class="fallback-subject" src="assets/pick/subject.png" alt=""/><img class="fallback-text" src="assets/pick/text.png" alt=""/><span class="fallback-foil"></span></div></div>
+          <div class="viewer-corner-label"><span>HOLOGRAPHIC<br/>FINISH / 001</span><span class="viewport-coords" id="angleReadout">X 00.0° / Y 00.0°</span></div>
+          <div class="viewer-hint"><span class="drag-icon">✥</span> DRAG TO INSPECT <span class="hint-divider">/</span> DOUBLE CLICK TO FLIP</div>
+        </div>
+        <aside class="inspect-details">
+          <div class="detail-accent"><span class="star">✦</span> EXTRAORDINARILY RARE</div>
+          <div class="detail-rule"></div>
+          <div class="item-category">★ SPECIAL COLLECTIBLE <span>— GUITAR PICK</span></div>
+          <h3>CHEN<br/><span>RANPAN</span></h3>
+          <p class="item-name">THE ONE-OF-ONE HOLO PICK</p>
+          <div class="detail-stats"><div><span>CLASSIFICATION</span><strong>RARE SPECIAL</strong></div><div><span>CONDITION</span><strong>FACTORY NEW</strong></div><div><span>PATTERN</span><strong>#001 / UNIQUE</strong></div><div><span>OWNER</span><strong>陈冉攀</strong></div></div>
+          <div class="birthday-line"><span>✦</span><p>HAPPY BIRTHDAY.<br/><b>THIS DROP WAS ALWAYS YOURS.</b></p></div>
+          <div class="inspect-actions"><button id="flipButton" class="primary-button smaller" type="button"><span class="button-main">INSPECT REVERSE</span><span class="button-arrow">↻</span></button><button id="resetButton" class="ghost-button" type="button">↶ &nbsp;REOPEN CASE</button></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div class="gold-burst" id="goldBurst" aria-hidden="true"><div class="burst-ring"></div><div class="burst-ring burst-ring2"></div><div class="burst-core"></div><div class="burst-rays"></div><span class="burst-word">★ SPECIAL ITEM</span></div>
+  <footer class="footer"><span>CONFIDENTIAL / GIFT RELEASE</span><span>BUILT FOR ONE. OWNED BY ONE.</span><span>EST. OCT 2026</span></footer>
+  <script src="js/outline.js"></script>
+  <script src="js/pick3d.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
